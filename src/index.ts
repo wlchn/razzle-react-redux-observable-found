@@ -1,6 +1,6 @@
 export { default as actionToPlainObject } from './core/actionToPlainObject';
 export { default as configureFound } from './core/configureFound';
-export { default as createStore } from './core/createStore';
+export { default as createStore, store } from './core/createStore';
 export { default as hydrate } from './core/hydrate';
 export { default as OutputAction } from './core/OutputAction';
 export { default as OutputEpic } from './core/OutputEpic';

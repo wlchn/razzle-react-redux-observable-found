@@ -23,6 +23,8 @@ import configureFound from './configureFound';
 
 const farce = require('farce');
 
+export let store: Store<OutputState<any>, OutputAction<any>>;
+
 interface CreateStoreArg<State = any, Action extends AnyAction = any> {
   initialState: State;
   req?: Request;
@@ -87,7 +89,7 @@ export default <State = any, Action extends AnyAction = any>({
     ...rootReducer,
   });
 
-  const store: Store<OutputState<State>, OutputAction<Action>> = createStore(
+  const storeCreated: Store<OutputState<State>, OutputAction<Action>> = createStore(
     combinedReducers,
     initialState,
     compose(
@@ -95,6 +97,8 @@ export default <State = any, Action extends AnyAction = any>({
       ...found.storeEnhancers,
     ),
   );
+
+  store = storeCreated;
 
   const wrappedEpic = wrapRootEpic(epicMiddleware, rootEpic, req);
 
