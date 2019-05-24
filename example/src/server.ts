@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { createServer } from '@christophediprima/razzle-react-redux-observable-found';
+import { createServer } from '@wlchn/razzle-react-redux-observable-found';
 
 import Action from './core/Action';
 import State from './core/State';

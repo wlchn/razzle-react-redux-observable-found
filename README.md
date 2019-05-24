@@ -1,6 +1,8 @@
 # razzle-react-redux-observable-found
 
 > Bootstrap Razzle full SRR React App with [Redux-Observable](https://redux-observable.js.org/) and [Found](https://github.com/4Catalyzer/found)
+> Forked from https://github.com/wlchn/razzle-react-redux-observable-found
+> Changed the origin Repo in order to use `store`
 
 ## Install
 
@@ -14,7 +16,7 @@ npm install --save razzle-react-redux-observable-found
 // server.ts
 import express from 'express';
 
-import { createServerConfig } from '@christophediprima/razzle-react-redux-observable-found';
+import { createServerConfig } from '@wlchn/razzle-react-redux-observable-found';
 
 import Action from './core/Action';
 import State from './core/State';
@@ -47,7 +49,7 @@ export default server;
 // client.ts
 import './client.css';
 
-import { createClientConfig } from '@christophediprima/razzle-react-redux-observable-found';
+import { createClientConfig } from '@wlchn/razzle-react-redux-observable-found';
 
 import Action from './core/Action';
 import State from './core/State';
@@ -61,6 +63,15 @@ createClientConfig<State, Action>(rootEpic, rootReducer, routes);
 
 Have a look at the example for usage with a custom document and extra providers!
 
+Using store:
+
+```ts
+import { store } from '@wlchn/razzle-react-redux-observable-found';
+
+store.getState()
+store.dispatch(...)
+```
+
 **razzle-react-redux-observable-found** is build with [create-react-library](https://github.com/transitive-bullshit/create-react-library)
 
 ## Inspirations
@@ -69,4 +80,8 @@ Have a look at the example for usage with a custom document and extra providers!
 
 ## License
 
-MIT © [christophediprima](https://github.com/christophediprima)
+MIT © [wlchn](https://github.com/wlchn)
+
+## Origin Auther
+
+[christophediprima]https://github.com/christophediprima

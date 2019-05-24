@@ -1,6 +1,6 @@
 import './client.css';
 
-import { hydrateClient } from '@christophediprima/razzle-react-redux-observable-found';
+import { hydrateClient } from '@wlchn/razzle-react-redux-observable-found';
 
 import Action from './core/Action';
 import State from './core/State';

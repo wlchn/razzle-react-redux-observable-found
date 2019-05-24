@@ -110,7 +110,7 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@christophediprima/razzle-react-redux-observable-found@link:..":
+"@wlchn/razzle-react-redux-observable-found@link:..":
   version "0.0.0"
   uid ""
 
