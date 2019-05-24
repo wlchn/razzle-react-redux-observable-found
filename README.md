@@ -1,7 +1,9 @@
 # razzle-react-redux-observable-found
 
 > Bootstrap Razzle full SRR React App with [Redux-Observable](https://redux-observable.js.org/) and [Found](https://github.com/4Catalyzer/found)
+
 > Forked from https://github.com/wlchn/razzle-react-redux-observable-found
+
 > Changed the origin Repo in order to use `store`
 
 ## Install
@@ -63,9 +65,9 @@ createClientConfig<State, Action>(rootEpic, rootReducer, routes);
 
 Have a look at the example for usage with a custom document and extra providers!
 
-Using store:
 
 ```ts
+// Using store:
 import { store } from '@wlchn/razzle-react-redux-observable-found';
 
 store.getState()
@@ -84,4 +86,4 @@ MIT © [wlchn](https://github.com/wlchn)
 
 ## Origin Auther
 
-[christophediprima]https://github.com/christophediprima
+[christophediprima](https://github.com/christophediprima)
