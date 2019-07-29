@@ -6,6 +6,8 @@
 
 > Changed the origin Repo in order to use `store`
 
+> If you don't want to use RxJS, but want to bootstrap Razzle full SRR with `Typescript` and `Redux`, think about https://github.com/wlchn/razzle-redux-typescript
+
 ## Install
 
 ```bash
